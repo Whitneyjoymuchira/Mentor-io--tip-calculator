@@ -34,11 +34,12 @@ body{
     background-color: var(--white);
     border-radius: 30px;
     margin: 10px;
+    max-width: 380px;
 
 
    
 }
-.bill{
+.bill-container{
     margin: 10px;
     
 }
@@ -48,12 +49,49 @@ body{
     background-color: var(--light-grayish-cyan);
     color: var(--very-dark-cyan);
     border-style: none;
-    appearance:textfield;
-    text-align: right;
+    text-align: left;
 }
-.cash-bill{
+.percent{
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
+justify-content: space-between;
+align-items: center;
+}
+.percentages{
+    flex: auto;
+    padding: 5px 40px 5px 40px;
+    background-color: var(--very-dark-cyan);
+    color: white;
+    border-radius: 5px;
+    margin: 15px;
+    border: 20px;
+    font-size: 23px;
 
 }
+.no-people{
+    border-radius: 5px;
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    padding: 10px 50px 10px 35px;
+    margin-left: 40px;
+    background-image:url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y:center;
+    text-align: right;
+    color: var(--very-dark-cyan);
+    font-size:15px;
+    font-weight: bold;
+}
+.tip{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+
+
+
 
 
 .attribution {
