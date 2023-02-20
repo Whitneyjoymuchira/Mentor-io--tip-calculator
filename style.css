@@ -87,7 +87,13 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+
 }
+
+
+
 
 
 
