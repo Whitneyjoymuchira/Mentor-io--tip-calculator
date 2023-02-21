@@ -85,6 +85,7 @@ align-items: center;
     margin: 10px;
     border: 20px;
     font-size: 23px;
+    cursor: pointer;
 
 }
 .no-people{
@@ -137,7 +138,18 @@ align-items: center;
     border-radius: 8px;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
     
+}
+
+.reset:hover{
+    background-color: var(--light-grayish-cyan)
+}
+.percentages:hover{
+    background-color: var(--strong-cyan);
+}
+.percentages:focus{
+    background-color: var(--very-light-grayish-cyan);
 }
 
 
