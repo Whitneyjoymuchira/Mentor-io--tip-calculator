@@ -40,8 +40,9 @@ body{
     border-radius: 30px;
     margin: 5px;
     margin-top: 5px;
-    max-width: 380px;
+    max-width: 370px;
     height: 100%;
+    padding: 10px;
    
 
 
@@ -98,7 +99,7 @@ align-items: center;
     border-radius: 5px;
     background-color: var(--very-light-grayish-cyan);
     border: none;
-    padding: 10px 50px 10px 35px;
+    padding: 10px 35px ;
     margin-left: 30px;
     background-image:url(./images/icon-person.svg);
     background-repeat: no-repeat;
@@ -113,17 +114,24 @@ align-items: center;
     flex-wrap: wrap-reverse;
     flex-direction: column-reverse;
     justify-content:flex-start;
-    align-items:center;
+    align-items:flex-end;
     background-color: var(--very-dark-cyan);
     color: var(--white);
     flex: 1;
     border-radius: 20px;
-     padding: 20px;
+    padding: 5px;
      margin-top: 10px;
 
 
-}
 
+}
+.person{
+    color: var(---dark-grayish-cyan);
+    font-family: inherit;
+    margin-top: 2px;
+    font-weight: 50;
+
+}
 
 
 .tip-amount{
@@ -132,13 +140,21 @@ align-items: center;
     text-align: right;
     color: var(--strong-cyan);
     padding:5px;
+    font-size:20px;
     border: none;
-    font-size: 18px;
-   
+    font-family: inherit;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 65%;
+    text-align:right;
 
 }
+
+
+
+
 .reset{
-    margin-top: 20px;
+    margin: 20px 30px;
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
     padding: 10px 100px;
@@ -146,6 +162,9 @@ align-items: center;
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+
     
 }
 
