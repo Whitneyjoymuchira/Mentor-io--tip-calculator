@@ -15,7 +15,7 @@ console.log(bill)
 persons.addEventListener('change', ()=>{
     let people=Number(persons.value)
     console.log(people)
- })
+
 
     percentages.forEach((percent)=>{
         percent.addEventListener('click',()=>{
@@ -31,17 +31,23 @@ persons.addEventListener('change', ()=>{
 
                    //calculating total of tips+ bill
              function sum(){
-            total=Number(tipped+bill)
+           let total=Number(tipped+bill)
             console.log(total)
 
             //finding each cost
-             
+             function individualCost(){
+             let cost=parseInt(total / people)
+             totalPerPerson.value=cost.toFixed(2)
+
+            console.log(cost)
 
              }
-
-             
+             individualCost()
+            }
+        
              sum()
-              
+            })
+            
                 })
                 
         })
