@@ -10,10 +10,7 @@ const custom=document.getElementById('customize')
 
 function calculateTips(){
 //customize button
-custom.addEventListener('click', ()=>{
-   const input=document.createElement('input')
-   input.type="text"
-console.log(input)
+
 
 
 billInput.addEventListener('change', ()=>{
@@ -73,7 +70,7 @@ persons.addEventListener('change', ()=>{
         })
     })
 
-})
+
 
 }
 calculateTips()
