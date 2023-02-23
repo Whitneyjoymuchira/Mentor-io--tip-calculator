@@ -3,6 +3,8 @@ let percentages=document.querySelectorAll('.percentages')
 let tip=document.getElementById('total-amount')
 let totalPerPerson=document.querySelector('#total-person')
 const persons=document.getElementById('people')
+let button=document.querySelector('#reset-button')
+const inputs=document.querySelectorAll('input')
 
 
 function calculateTips(){
@@ -40,6 +42,12 @@ persons.addEventListener('change', ()=>{
              totalPerPerson.value=cost.toFixed(2)
 
             console.log(cost)
+            //reset button
+            button.addEventListener('click', ()=>{
+                inputs.forEach((input)=>{
+                    input.value=''
+                })
+            })
 
              }
              individualCost()
