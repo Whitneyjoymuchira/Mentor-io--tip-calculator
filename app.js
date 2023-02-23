@@ -5,9 +5,17 @@ let totalPerPerson=document.querySelector('#total-person')
 const persons=document.getElementById('people')
 let button=document.querySelector('#reset-button')
 const inputs=document.querySelectorAll('input')
+const custom=document.getElementById('customize')
 
 
 function calculateTips(){
+//customize button
+custom.addEventListener('click', ()=>{
+   const input=document.createElement('input')
+   input.type="text"
+console.log(input)
+
+
 billInput.addEventListener('change', ()=>{
     let bill=Number(billInput.value)
    // let person=Number(persons.value)
@@ -46,7 +54,11 @@ persons.addEventListener('change', ()=>{
             button.addEventListener('click', ()=>{
                 inputs.forEach((input)=>{
                     input.value=''
+
+
+                    
                 })
+                
             })
 
              }
@@ -61,7 +73,7 @@ persons.addEventListener('change', ()=>{
         })
     })
 
-   
+})
 
 }
 calculateTips()
